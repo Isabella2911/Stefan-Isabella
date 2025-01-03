@@ -1,0 +1,63 @@
+# Stefan-Isabella
+# Platformă de Învățare Online
+
+## Descriere
+
+Acesta este un proiect de platformă de învățare online, conceput pentru a facilita înscrierea cursanților la diverse cursuri, monitorizarea progresului lor, participarea la discuții și evaluarea cunoștințelor prin teste. Aplicația include un **backend** implementat cu **Java** și **Spring Boot**, conectat la o **bază de date in-memory H2**, și oferă un **API REST** pentru interacțiunea cu aplicația.
+
+## Funcționalități
+
+1. **Pagina principală**:
+   - Prezentarea cursurilor disponibile, organizate pe categorii (ex. leadership, mindfulness, gestionarea timpului).
+   - Funcționalități de căutare și filtrare a cursurilor.
+   - Testimoniale și recenzii de la participanți.
+
+2. **Pagina detalii curs**:
+   - Descriere detaliată a cursului (lecturi, video, teme).
+   - Informații despre instructori.
+   - Buton de înscriere la curs.
+
+3. **Dashboard utilizator**:
+   - Vizualizarea progresului la cursuri (ex. procent completat).
+   - Acces la lecțiile video, fișiere de studiu și teme.
+   - Forum pentru discuții și întrebări cu alți cursanți și instructori.
+
+4. **Forum de discuții**:
+   - Creare subiecte de discuție pe tema fiecărui curs.
+   - Posibilitatea de a posta întrebări și de a răspunde.
+
+5. **Test de evaluare**:
+   - Teste de final pentru evaluarea progresului cursanților.
+   - Feedback personalizat pentru răspunsurile date.
+
+6. **Admin Panel**:
+   - Managementul cursurilor (adăugare, editare, ștergere).
+   - Gestionarea utilizatorilor și progresului acestora.
+   - Generarea rapoartelor de performanță a cursanților.
+
+## Tehnologii Folosite
+
+- **Java**
+- **Spring Boot**
+- **H2** (Bază de date in-memory)
+- **Thymeleaf** (pentru pagini dinamice - opțional)
+- **Swagger** (pentru documentarea API-ului)
+- **Spring Data JPA** (pentru gestionarea interacțiunii cu baza de date)
+- **JUnit** (pentru teste unitare)
+
+## Endpoint-uri API
+
+1. **GET /cursuri**: Obține lista tuturor cursurilor disponibile.
+2. **GET /cursuri/{id}**: Obține detalii despre un anumit curs.
+3. **POST /cursuri**: Adaugă un nou curs.
+4. **POST /inscriere**: Înscrierea unui utilizator la un curs.
+5. **POST /feedback**: Adăugarea unui feedback pentru un curs.
+6. **GET /utilizatori/{id}**: Obține detalii despre un utilizator.
+7. **PUT /cursuri/{id}**: Actualizează detalii pentru un curs existent.
+8. **DELETE /cursuri/{id}**: Șterge un curs.
+
+## Instrucțiuni de Instalare
+
+1. Clonează acest repository:
+   ```bash
+   git clone https://github.com/username/numele-repository-ului.git
